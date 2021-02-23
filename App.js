@@ -9,20 +9,20 @@ import {
 
 } from 'react-native';
 import Screen from './component/page/Screen';
-// import Start from './component/page/Start';
-// import Game from './component/page/Game';
-// import Login from './component/page/Login';
-// import Splacescreen from './component/page/Splacescreen';
+import Start from './component/page/Start';
+import Game from './component/page/Game';
+import Login from './component/page/Login';
+import Splacescreen from './component/page/Splacescreen';
 
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 
-// const Main = createStackNavigator();
+const Main = createStackNavigator();
 const App = () => {
 return (
    <>
-{/* <NavigationContainer>
+<NavigationContainer>
         <Main.Navigator >
 
         <Main.Screen name="splacescreen" component={Splacescreen} 
@@ -33,20 +33,21 @@ return (
           options= {{headerShown:false}} />
           <Main.Screen name="Game" component={Game} 
           options= {{headerShown:false}}/>
-          {/* <Main.Screen name="Home" component={tabs} />
+          {/*  <Main.Screen name="Home" component={tabs} />
           <Main.Screen name="Home" component={MyDrawer}
          options= {{headerShown:false}}
           
           />
           <Main.Screen name="Otp" component={Otp} />
-          {/* <Main.Screen name="ExampleOTP" component={ExampleOTP}/> */}
+          <Main.Screen name="ExampleOTP" component={ExampleOTP}/> */}
           {/* <Main.Screen name="InputOTPScreen" component={InputOTPScreen}/> */}
-        {/* </Main.Navigator> */}
+
+        </Main.Navigator>
 
 
-      {/* </NavigationContainer> */} 
+      </NavigationContainer> 
       
-      <Screen/>
+      {/* <Screen/> */}
    </>
 
   );

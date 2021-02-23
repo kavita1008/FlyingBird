@@ -12,7 +12,7 @@ const Obstacles = ({randomBottom,color,obstaclesLeft,obstacleWidth,obstacleHeigh
 return(
 <>
 
-{/* <View style={{
+<View style={{
    position:'absolute',
    backgroundColor:color,
 width:obstacleWidth,
@@ -20,8 +20,8 @@ height:obstacleHeight,
 left:obstaclesLeft,
 bottom:randomBottom + obstacleHeight + gap,
 
-}}/> */}
- <ImageBackground  style={{ flex: 1,
+}}/>
+ {/* <ImageBackground  style={{ flex: 1,
  width:50,
  height:50,
    // resizeMode: "cover",
@@ -38,7 +38,17 @@ bottom:randomBottom + obstacleHeight + gap,
      bottom:randomBottom + obstacleHeight + gap,}}
     
     source={require('./image/C1.png')}/>
-{/* <View style={{
+
+    <Image style={{
+   position:'absolute',
+//    backgroundColor:color,
+width: obstacleWidth,
+height: obstacleHeight,
+left: obstaclesLeft,
+bottom:randomBottom, }} source={require('./image/T7.png')}/>
+</ImageBackground> */}
+
+<View style={{
    position:'absolute',
    backgroundColor:color,
 width: obstacleWidth,
@@ -48,15 +58,7 @@ bottom:randomBottom,
 
 }}
 
-/> */}
-    <Image style={{
-   position:'absolute',
-//    backgroundColor:color,
-width: obstacleWidth,
-height: obstacleHeight,
-left: obstaclesLeft,
-bottom:randomBottom, }} source={require('./image/T7.png')}/>
-</ImageBackground>
+/>
 </>
 )
 
